@@ -88,16 +88,16 @@ digraph process {
 
 Use the least powerful model that can handle each role to conserve cost and increase speed.
 
-**Mechanical implementation tasks** (isolated functions, clear specs, 1-2 files): use a fast, cheap model. Most implementation tasks are mechanical when the plan is well-specified.
+**Mechanical implementation tasks** (isolated functions, clear specs, 1-2 files): use `gpt-5.4-mini`. Most implementation tasks are mechanical when the plan is well-specified.
 
-**Integration and judgment tasks** (multi-file coordination, pattern matching, debugging): use a standard model.
+**Integration and judgment tasks** (multi-file coordination, pattern matching, debugging): use `gpt-5.3-codex` or `gpt-5.4`.
 
-**Architecture, design, and review tasks**: use the most capable available model.
+**Architecture, design, and review tasks**: use `gpt-5.4`.
 
 **Task complexity signals:**
-- Touches 1-2 files with a complete spec → cheap model
-- Touches multiple files with integration concerns → standard model
-- Requires design judgment or broad codebase understanding → most capable model
+- Touches 1-2 files with a complete spec → `gpt-5.4-mini`
+- Touches multiple files with integration concerns → `gpt-5.3-codex` or `gpt-5.4`
+- Requires design judgment or broad codebase understanding → `gpt-5.4`
 
 ## Handling Implementer Status
 

@@ -261,7 +261,7 @@ Design-for-isolation and file-size-awareness guidance added to brainstorming, wr
 
 **Subagent-driven development improvements**
 
-- **Model selection** — Guidance for choosing model capability by task type: cheap models for mechanical implementation, standard for integration, capable for architecture and review
+- **Model selection** — Guidance for choosing model capability by task type: `gpt-5.4-mini` for mechanical implementation, `gpt-5.3-codex` or `gpt-5.4` for integration, and `gpt-5.4` for architecture and review
 - **Implementer status protocol** — Subagents now report DONE, DONE_WITH_CONCERNS, BLOCKED, or NEEDS_CONTEXT. Controller handles each status appropriately: re-dispatching with more context, upgrading model capability, breaking tasks apart, or escalating to human
 
 ### Improvements
